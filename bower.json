@@ -1,0 +1,30 @@
+{
+  "name": "bux",
+  "description": "bux is theme build on bootstrap-sass",
+  "main": "index.js",
+  "authors": [
+    "Sravan <sravana_kumar_kalluri@apple.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "ui",
+    "elements",
+    "sass",
+    "lib"
+  ],
+  "homepage": "https://github.com/sraone/bux",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
