@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.3.6"
+    "bootstrap-sass": "~3.3.6",
+    "google-open-sans": "~1.0.0"
   }
 }

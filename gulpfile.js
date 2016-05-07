@@ -5,7 +5,7 @@ var browser = require('browser-sync');
 var reload = browser.reload;
 
 gulp.task('sass', function () {
-    return gulp.src('assets/styles/*.scss')
+    return gulp.src('assets/styles/bux.scss')
         .pipe(plugins.print())
         .pipe(plugins.plumber())
         .pipe(plugins.sourcemaps.init())
@@ -21,10 +21,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('styles', ['sass'], function () {
-    return gulp.src('.tmp/styles/*.*')
+    return gulp.src('.tmp/styles/*.css')
         .pipe(plugins.print())
-        .pipe(plugins.concat('bux.css'))
-        .pipe(plugins.cssnano())
+        //.pipe(plugins.cssnano())
         .pipe(gulp.dest('dist/styles'));
 });
 
@@ -34,9 +33,8 @@ gulp.task('html', ['styles'], function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
-        .concat('assets/fonts/**/*'))
-        .pipe(gulp.dest('.tmp/fonts'))
+    return gulp.src(['./fe_assets/google-open-sans/open-sans/*.*', './fe_assets/bootstrap-sass/assets/fonts/*.*'])
+        .pipe(plugins.print())
         .pipe(gulp.dest('dist/fonts'));
 });
 

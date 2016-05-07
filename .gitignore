@@ -3,3 +3,4 @@ node_modules
 dist
 ui_assets
 .tmp
+fe_assets
