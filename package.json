@@ -1,6 +1,6 @@
 {
   "name": "bux",
-  "version": "alpha-0.0.1",
+  "version": "0.0.1",
   "description": "bux is theme build on bootstrap-sass",
   "main": "index.js",
   "scripts": {
