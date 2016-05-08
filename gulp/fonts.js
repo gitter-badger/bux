@@ -8,12 +8,13 @@ gulp.task('fonts:clean', function () {
 });
 
 gulp.task('fonts', ['fonts:clean'], function () {
-    return gulp.src([config.feassets.fonts.opensans, config.feassets.fonts.opensans])
+    return gulp.src([config.feassets.fonts.opensans, config.feassets.fonts.bootstrap])
         .pipe(plugins.print())
         .pipe(gulp.dest(config.assets.fonts));
 });
 
 gulp.task('fonts:test', ['fonts'], function () {
-    return gulp.src(config.assets.fonts)
+    return gulp.src(config.assets.fonts + '/**/*.*')
+        .pipe(plugins.print())
         .pipe(gulp.dest(config.dist.fonts));
 });

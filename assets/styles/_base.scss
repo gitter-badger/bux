@@ -1,0 +1,11 @@
+@import "variables";
+@import "../../fe_assets/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../fe_assets/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+@import "../../fe_assets/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../fe_assets/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../fe_assets/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+html {
+  font-family: $font-family-base;
+}
