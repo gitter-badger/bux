@@ -37,6 +37,6 @@ To see the preview of bux run:
 
     gulp preview
 
-It will run on localhost with port 9999.
+It will run on localhost with port 9000.
 
 
