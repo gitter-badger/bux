@@ -16,7 +16,7 @@ gulp.task('styles:test', ['sass:lint'], function () {
         }).on('error', plugins.sass.logError))
         .pipe(plugins.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
         .pipe(plugins.sourcemaps.write())
-        .pipe(gulp.dest(config.dist.root))
+        .pipe(gulp.dest(config.dist.styles))
         .pipe(reload({stream: true}));
 });
 
