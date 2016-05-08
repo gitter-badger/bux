@@ -1,5 +1,7 @@
 # bux [![Build Status](https://travis-ci.org/sraone/bux.svg?branch=alpha-0.0.1)](https://travis-ci.org/sraone/bux)
 
+[![Join the chat at https://gitter.im/sraone/bux](https://badges.gitter.im/sraone/bux.svg)](https://gitter.im/sraone/bux?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What is bux?
 bux is UI theme that builds on bootstrap-sass.
 
